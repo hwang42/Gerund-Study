@@ -4,10 +4,10 @@ from nltk.tokenize import PunktSentenceTokenizer
 
 from .types import Paragraph, Sentence, Text
 
+tokenizer = PunktSentenceTokenizer()
 
 def sentences_from_tokens(tokens: list[str]) -> list[Sentence]:
-    tokenizer = PunktSentenceTokenizer()
-
+    print(' '.join(tokens))
     return [Sentence(s) for s in tokenizer.sentences_from_tokens(tokens)]
 
 
@@ -20,6 +20,8 @@ def paragraphs_from_tokens(tokens: list[str]) -> list[Paragraph]:
 
 def text_from_tokens(tokens: list[str]) -> Text:
     text_id, *content = tokens
+
+    print("{:-^80}".format(f" {text_id}"))
 
     return Text(text_id, paragraphs_from_tokens(content))
 

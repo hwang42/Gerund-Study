@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 
 from stanza import Pipeline
 
-dependency_parser = Pipeline(lang="en")
+dependency_parser = Pipeline(lang="en", processors="tokenize,mwt,pos,lemma,depparse", tokenize_pretokenized=True)
 
 
 @dataclass
