@@ -45,11 +45,7 @@ def sentence_search(sentence: Sentence, pattern: list[str], query: str) -> bool:
         reasoner.assertz(clause[:-1])
 
     # pattern matching and determine result
-    matched = True
-    try:
-        next(reasoner.query(query))
-    except StopIteration:
-        matched = False  # no answer at all
+    answers = list(reasoner.query(query))
 
     # reset reasoner
     reasoner.retractall("text(_, _)")
@@ -59,4 +55,4 @@ def sentence_search(sentence: Sentence, pattern: list[str], query: str) -> bool:
     for clause in pattern:
         reasoner.retract(clause[:-1])
 
-    return matched
+    return answers
