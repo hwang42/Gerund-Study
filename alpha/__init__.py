@@ -37,7 +37,7 @@ def print_sent(sentence: str | Sentence, xpos: bool = False) -> None:
     display_html(f"<div>{' '.join(tokens)}</div>", raw=True)
 
 
-def print_parse(sentence: str | Sentence, aligned: bool = True) -> None:
+def parse_to_strings(sentence: str | Sentence, aligned: bool = True) -> list[str]:
     sentence = ensure_loaded(sentence)
 
     root = None
@@ -55,13 +55,14 @@ def print_parse(sentence: str | Sentence, aligned: bool = True) -> None:
                      relation,
                      target["text"], target["xpos"]))
 
-    print(f"Root: {root['text']} [{root['xpos']}]")
+    output = [f"Root: {root['text']} [{root['xpos']}]"]
 
     if not aligned:
         for edge in edges:
             s_text, s_xpos, relation, t_text, t_xpos = edge
 
-            print(f"{s_text} [{s_xpos}] -({relation})-> [{t_xpos}] {t_text}")
+            output.append(
+                f"{s_text} [{s_xpos}] -({relation})-> [{t_xpos}] {t_text}")
     else:
         s_text_width = max(len(i[0]) for i in edges)
         s_xpos_width = max(len(i[1]) for i in edges)
@@ -74,4 +75,12 @@ def print_parse(sentence: str | Sentence, aligned: bool = True) -> None:
                     "[{:^"f"{t_xpos_width}""}] {:<"f"{t_text_width}""}")
 
         for edge in edges:
-            print(template.format(edge[0], edge[1], edge[2], edge[4], edge[3]))
+            output.append(
+                (template.format(edge[0], edge[1], edge[2], edge[4], edge[3])))
+
+    return output
+
+
+def print_parse(sentence: str | Sentence, aligned: bool = True) -> None:
+    for line in parse_to_strings(sentence, aligned):
+        print(line)
