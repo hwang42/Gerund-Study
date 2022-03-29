@@ -55,14 +55,10 @@ def detect_pattern1(text):
         clauses = convert(sentence)
 
         skip_sentence = False
-        ing_present = False
+        vbg_present = False
         for node, (text, xpos, head, relation, child) in enumerate(clauses):
-            if re.search(r'\b[a-z]+ing\b', text, re.I):
-                ing_present = True
-                # if xpos != "VBG" and xpos != "NN":
-                if xpos != "VBG":
-                    skip_sentence = True
-                    break
+            if xpos == "VBG":
+                vbg_present = True
 
                 if head != -1:
                     if clauses[head][3] == "amod":
@@ -74,7 +70,7 @@ def detect_pattern1(text):
                         skip_sentence = True
                         break
 
-        if skip_sentence or not ing_present:
+        if skip_sentence or not vbg_present:
             continue
 
         # if "amod" in deprels or "aux" in deprels:
