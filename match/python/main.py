@@ -7,6 +7,7 @@ from typing import Generator
 
 from coca import Sentence, Text
 import re
+import csv
 # from pyswip import Prolog
 
 # PATTERN = "pattern(X) :- xpos(X, 'VBG'), \+ dependency(_, X, 'amod'), \+ dependency(X, _, 'aux')"
@@ -48,35 +49,66 @@ def convert(sentence: Sentence) -> List[list]:
 
 def detect_pattern1(text):
     for id, (sen_id, sentence) in enumerate(flatten(text), start=1):
-        # construct knowledge base
-        # print("\n\nSENTENCE", id, ":")
-
-        # clauses, xposes, deprels = convert(sentence)
         clauses = convert(sentence)
 
-        skip_sentence = False
-        vbg_present = False
         for node, (text, xpos, head, relation, child) in enumerate(clauses):
             if xpos == "VBG":
-                vbg_present = True
 
                 if head != -1:
                     if clauses[head][3] == "amod":
-                        skip_sentence = True
-                        break
+                        continue
 
                 if child != -1:
                     if clauses[child][3] == "aux":
-                        skip_sentence = True
-                        break
+                        continue
 
-        if skip_sentence or not vbg_present:
-            continue
+                print(f"{sen_id}\t{text}\t{node+1}\t{sentence.dependency.text}")
+                break
 
-        # if "amod" in deprels or "aux" in deprels:
-        #    continue
 
-        print(sen_id, sentence.dependency.text)
+def detect_pattern2(text, exclude_set):
+    for id, (sen_id, sentence) in enumerate(flatten(text), start=1):
+        clauses = convert(sentence)
+
+        word = ""
+        position = 0
+        pattern_present = False
+        for node, (text, xpos, head, relation, child) in enumerate(clauses):
+            if xpos in ("VBG", "NN", "NNS"):
+                text = text.lower()
+                if re.search(r'\b[a-z]+ings?\b', text):
+                    if xpos == "VBG":
+                        pattern_present = True
+
+                        if head != -1:
+                            if clauses[head][3] == "amod":
+                                pattern_present = False
+
+                        if child != -1:
+                            if clauses[child][3] == "aux":
+                                pattern_present = False
+
+                        if pattern_present:
+                            word = text
+                            position = node + 1
+                            break
+
+                    if xpos == "NN":
+                        if text not in exclude_set:
+                            pattern_present = True
+                            word = text
+                            position = node + 1
+                            break
+
+                    if xpos == "NNS":
+                        if text[:-1] not in exclude_set:
+                            pattern_present = True
+                            word = text
+                            position = node + 1
+                            break
+
+        if pattern_present:
+            print(f"{sen_id}\t{word}\t{position}\t{sentence.dependency.text}")
 
 
 if __name__ == "__main__":
@@ -91,12 +123,18 @@ if __name__ == "__main__":
     filenames = os.listdir(args.directory)
     filenames = map(lambda x: os.path.join(args.directory, x), filenames)
 
+    # Reading exclude set for pattern 2
+    with open('celex-ing.csv', 'r') as fp:
+        reader = csv.reader(fp)
+        constrains = list(reader)[1:]
+
+    exclude_set = set(x[0].lower() for x in constrains if x[1] == "Y")
+    # print(len(exclude_set))
+    # print(exclude_set)
+
     for filename in filter(lambda x: x.endswith(".pkl"), filenames):
         with open(filename, "rb") as storage:
             text = pickle.load(storage)
 
-        detect_pattern1(text)
-
-
-
-
+        # detect_pattern1(text)
+        detect_pattern2(text, exclude_set)
