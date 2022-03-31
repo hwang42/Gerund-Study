@@ -37,7 +37,7 @@ def print_sent(sentence: str | Sentence, xpos: bool = False) -> None:
     display_html(f"<div>{' '.join(tokens)}</div>", raw=True)
 
 
-def parse_to_strings(sentence: str | Sentence, aligned: bool = True) -> list[str]:
+def parse_to_strings(sentence: str | Sentence, aligned: bool = True, center: int | None = None) -> list[str]:
     sentence = ensure_loaded(sentence)
 
     root = None
@@ -47,6 +47,9 @@ def parse_to_strings(sentence: str | Sentence, aligned: bool = True) -> list[str
 
         if head == 0:
             root = sentence[1][id - 1]
+            continue
+
+        if center and id != center and head != center:
             continue
 
         source, target = sentence[1][head - 1], sentence[1][id - 1]
@@ -81,6 +84,6 @@ def parse_to_strings(sentence: str | Sentence, aligned: bool = True) -> list[str
     return output
 
 
-def print_parse(sentence: str | Sentence, aligned: bool = True) -> None:
-    for line in parse_to_strings(sentence, aligned):
+def print_parse(sentence: str | Sentence, aligned: bool = True, center: int | None = None) -> None:
+    for line in parse_to_strings(sentence, aligned, center):
         print(line)
