@@ -1,0 +1,758 @@
+Word,Exclude?,Occurrences,ClassNum,C_N,Unc_N,Sing_N,Plu_N,GrC_N,GrUnc_N,Attr_N,PostPos_N,Voc_N,Proper_N,Exp_N
+thing,Y,18602,1,Y,N,Y,N,N,N,N,N,N,N,N
+morning,Y,5598,1,Y,Y,Y,N,N,N,Y,N,N,N,N
+evening,N,3619,1,Y,Y,N,N,N,N,N,N,N,N,N
+building,N,3167,1,Y,Y,N,N,N,N,N,N,N,N,N
+meeting,N,3102,1,Y,N,N,N,N,Y,N,N,N,N,N
+feeling,N,2524,1,Y,Y,Y,N,N,N,N,N,N,N,N
+reading,N,2108,1,Y,Y,N,N,N,N,Y,N,N,N,N
+king,Y,1784,1,Y,N,N,N,N,N,Y,N,N,N,N
+training,N,1748,1,N,Y,Y,N,N,N,N,N,N,N,N
+being,Y,1651,1,Y,Y,N,N,N,N,N,N,N,N,N
+housing,Y,1590,1,N,Y,N,N,N,N,N,N,N,N,N
+painting,N,1379,1,Y,Y,N,N,N,N,N,N,N,N,N
+beginning,N,1361,1,Y,Y,N,N,N,N,N,N,N,N,N
+spring,Y,1260,1,Y,Y,Y,N,N,N,N,N,N,N,N
+teaching,N,1230,1,Y,Y,N,N,N,N,N,N,N,N,N
+living,N,1214,1,Y,Y,N,Y,N,N,N,N,N,N,N
+meaning,N,1148,1,Y,Y,N,N,N,N,N,N,N,N,N
+wing,Y,1036,1,Y,N,N,N,N,N,N,N,N,N,N
+understanding,N,1024,1,Y,Y,Y,N,N,N,N,N,N,N,N
+writing,N,1012,1,Y,Y,N,N,N,N,N,N,N,N,N
+fishing,N,894,1,N,Y,N,N,N,N,N,N,N,N,N
+ring,Y,878,1,Y,N,Y,N,N,N,N,N,N,N,N
+darling,Y,767,1,Y,N,N,N,N,N,N,N,Y,N,N
+drawing,Y,694,1,Y,Y,N,N,N,N,N,N,N,N,N
+warning,Y,692,1,Y,Y,N,N,N,N,N,N,N,N,N
+thinking,N,648,1,N,Y,N,N,N,N,N,N,N,N,N
+engineering,N,638,1,N,Y,N,N,N,N,N,N,N,N,N
+wedding,Y,633,1,Y,N,N,N,N,N,N,N,N,N,N
+clothing,Y,615,1,N,Y,N,N,N,N,N,N,N,N,N
+going,N,608,1,Y,Y,N,N,N,N,N,N,N,N,N
+string,Y,562,1,Y,Y,N,N,N,N,N,N,N,N,N
+farming,N,546,1,N,Y,N,N,N,N,N,N,N,N,N
+ceiling,Y,530,1,Y,N,N,N,N,N,N,N,N,N,N
+advertising,N,524,1,N,Y,N,N,N,N,N,N,N,N,N
+hunting,N,524,1,N,Y,N,N,N,N,N,N,N,N,N
+offering,N,432,1,Y,Y,N,N,N,N,N,N,N,N,N
+opening,N,406,1,Y,N,N,N,N,N,N,N,N,N,N
+fighting,N,402,1,N,Y,N,N,N,N,N,N,N,N,N
+shopping,N,398,1,N,Y,N,N,N,N,N,N,N,N,N
+heating,N,385,1,N,Y,N,N,N,N,N,N,N,N,N
+breathing,N,362,1,N,Y,N,N,N,N,N,N,N,N,N
+landing,N,354,1,Y,N,N,N,N,N,N,N,N,N,N
+coming,N,352,1,Y,N,Y,N,N,N,N,N,N,N,N
+suffering,N,350,1,Y,Y,N,N,N,N,N,N,N,N,N
+hearing,N,335,1,Y,Y,N,N,N,N,N,N,N,N,N
+shooting,N,325,1,N,Y,N,N,N,N,N,N,N,N,N
+finding,N,324,1,Y,N,N,N,N,N,N,N,N,N,N
+dwelling,N,323,1,Y,N,N,N,N,N,N,N,N,N,N
+cooking,N,318,1,N,Y,N,N,N,N,N,N,N,N,N
+swing,Y,318,1,Y,Y,Y,N,N,N,N,N,N,N,N
+setting,N,307,1,Y,Y,N,N,N,N,N,N,N,N,N
+running,N,305,1,N,Y,N,N,N,N,N,N,N,N,N
+dressing,N,292,1,Y,Y,N,N,N,N,N,N,N,N,N
+acting,N,284,1,N,Y,N,N,N,N,N,N,N,N,N
+pudding,Y,281,1,Y,Y,Y,N,N,N,N,N,N,N,N
+parking,N,254,1,N,Y,N,N,N,N,N,N,N,N,N
+lightning,Y,253,1,N,Y,N,N,N,N,Y,N,N,N,N
+blessing,N,250,1,Y,Y,N,N,N,N,N,N,N,N,N
+shilling,N,241,1,Y,N,N,N,N,N,N,N,N,N,N
+smoking,N,241,1,N,Y,N,N,N,N,Y,N,N,N,N
+recording,N,236,1,Y,N,N,N,N,N,N,N,N,N,N
+broadcasting,N,226,1,N,Y,N,N,N,N,N,N,N,N,N
+lighting,N,221,1,N,Y,N,N,N,N,N,N,N,N,N
+singing,N,218,1,N,Y,N,N,N,N,N,N,N,N,N
+nursing,N,214,1,N,Y,N,N,N,N,N,N,N,N,N
+gathering,N,212,1,Y,N,N,N,N,N,N,N,N,N,N
+greeting,N,209,1,Y,N,N,N,N,N,N,N,N,N,N
+following,N,208,1,Y,N,Y,N,N,N,N,N,N,N,N
+stocking,N,208,1,Y,N,N,N,N,N,N,N,N,N,N
+racing,N,207,1,N,Y,N,N,N,N,Y,N,N,N,N
+holding,N,198,1,Y,N,N,N,N,N,N,N,N,N,N
+left-wing,Y,192,1,Y,N,Y,N,N,Y,N,N,N,N,N
+timing,N,192,1,Y,Y,N,N,N,N,N,N,N,N,N
+cutting,N,191,1,Y,Y,N,N,N,N,N,N,N,N,N
+publishing,N,185,1,N,Y,N,N,N,N,N,N,N,N,N
+breeding,N,184,1,N,Y,N,N,N,N,N,N,N,N,N
+marketing,N,180,1,N,Y,N,N,N,N,N,N,N,N,N
+crossing,N,177,1,Y,Y,N,N,N,N,N,N,N,N,N
+longing,N,174,1,Y,Y,N,N,N,N,N,N,N,N,N
+drinking,N,173,1,N,Y,N,N,N,N,N,N,N,N,N
+grouping,N,173,1,Y,N,N,N,N,N,N,N,N,N,N
+mining,N,170,1,N,Y,N,N,N,N,N,N,N,N,N
+printing,N,170,1,Y,Y,N,N,N,N,N,N,N,N,N
+spelling,N,164,1,Y,Y,N,N,N,N,N,N,N,N,N
+right-wing,Y,163,1,Y,N,N,N,N,Y,Y,N,N,N,N
+shipping,N,160,1,N,Y,N,N,N,N,N,N,N,N,N
+clearing,N,155,1,Y,Y,N,N,N,N,N,N,N,N,N
+offspring,Y,154,1,Y,N,N,N,N,N,N,N,N,N,N
+passing,N,153,1,N,Y,N,N,N,N,N,N,N,N,N
+schooling,N,153,1,N,Y,N,N,N,N,N,N,N,N,N
+boarding,N,150,1,N,Y,N,N,N,N,N,N,N,N,N
+booking,N,150,1,Y,Y,N,N,N,N,N,N,N,N,N
+gambling,N,146,1,N,Y,N,N,N,N,N,N,N,N,N
+Irving,Y,146,1,N,N,N,N,N,N,N,N,N,Y,N
+borrowing,N,145,1,Y,Y,N,N,N,N,N,N,N,N,N
+serving,N,145,1,Y,Y,N,N,N,N,N,N,N,N,N
+wellbeing,N,145,1,N,Y,N,N,N,N,N,N,N,N,N
+banking,N,143,1,N,Y,N,N,N,N,N,N,N,N,N
+misunderstanding,N,139,1,Y,Y,N,N,N,N,N,N,N,N,N
+washing,N,138,1,N,Y,N,N,N,N,N,N,N,N,N
+ending,N,137,1,Y,N,N,N,N,N,N,N,N,N,N
+standing,N,137,1,N,Y,N,N,N,N,N,N,N,N,N
+beating,N,136,1,Y,Y,N,N,N,N,N,N,N,N,N
+reasoning,N,135,1,N,Y,N,N,N,N,N,N,N,N,N
+herring,Y,132,1,Y,Y,N,N,N,N,N,N,N,N,N
+bearing,N,131,1,Y,Y,Y,N,N,N,N,N,N,N,N
+angling,N,128,1,N,Y,N,N,N,N,N,N,N,N,N
+casting,N,127,1,Y,Y,N,N,N,N,N,N,N,N,N
+parting,N,127,1,Y,Y,N,N,N,N,N,N,N,N,N
+sterling,Y,121,1,N,Y,N,N,N,N,N,Y,N,N,N
+carving,N,120,1,Y,Y,N,N,N,N,N,N,N,N,N
+sitting,N,118,1,Y,N,N,N,N,N,N,N,N,N,N
+briefing,N,117,1,Y,Y,N,N,N,N,N,N,N,N,N
+backing,N,116,1,Y,Y,N,N,N,N,N,N,N,N,N
+dealing,N,115,1,Y,Y,N,N,N,N,N,N,N,N,N
+bowling,N,114,1,N,Y,N,N,N,N,N,N,N,N,N
+swelling,N,113,1,Y,Y,N,N,N,N,N,N,N,N,N
+Peking,Y,112,1,N,N,N,N,N,N,N,N,N,Y,N
+cunning,N,111,1,N,Y,N,N,N,N,N,N,N,N,N
+liking,N,111,1,N,N,Y,N,N,N,N,N,N,N,N
+outing,N,109,1,Y,N,N,N,N,N,N,N,N,N,N
+visiting,N,109,1,N,Y,N,N,N,N,N,N,N,N,N
+swimming,N,108,1,N,Y,N,N,N,N,N,N,N,N,N
+keeping,N,107,1,N,Y,N,N,N,N,N,N,N,N,N
+railing,N,107,1,Y,Y,N,N,N,N,N,N,N,N,N
+riding,N,106,1,Y,Y,Y,N,N,N,N,N,N,N,N
+saying,N,106,1,Y,N,N,N,N,N,N,N,N,N,N
+fitting,N,104,1,Y,N,N,N,N,N,N,N,N,N,N
+rating,N,103,1,Y,Y,N,N,N,N,N,N,N,N,N
+showing,N,103,1,Y,N,Y,N,N,N,N,N,N,N,N
+travelling,N,103,1,N,Y,N,N,N,N,N,N,N,N,N
+handwriting,Y,100,1,N,Y,Y,N,N,N,N,N,N,N,N
+heading,N,100,1,Y,N,N,N,N,N,N,N,N,N,N
+hanging,N,99,1,Y,Y,N,N,N,N,N,N,N,N,N
+gardening,N,96,1,N,Y,N,N,N,N,N,N,N,N,N
+ruling,N,95,1,Y,N,N,N,N,N,N,N,N,N,N
+filling,N,94,1,Y,Y,N,N,N,N,N,N,N,N,N
+calling,N,91,1,Y,N,N,N,N,N,N,N,N,N,N
+mourning,N,91,1,N,Y,N,N,N,N,N,N,N,N,N
+upbringing,Y,91,1,N,N,Y,N,N,N,N,N,N,N,N
+camping,N,89,1,N,Y,N,N,N,N,N,N,N,N,N
+undertaking,N,89,1,Y,N,N,N,N,N,N,N,N,N,N
+bathing,N,88,1,N,Y,N,N,N,N,N,N,N,N,N
+packing,N,86,1,N,Y,N,N,N,N,N,N,N,N,N
+covering,N,85,1,Y,Y,N,N,N,N,N,N,N,N,N
+flying,N,85,1,N,Y,N,N,N,N,N,N,N,N,N
+shouting,N,84,1,N,Y,N,N,N,N,N,N,N,N,N
+sailing,N,83,1,Y,Y,N,N,N,N,N,N,N,N,N
+marking,N,82,1,Y,Y,N,N,N,N,N,N,N,N,N
+uprising,N,81,1,Y,N,N,N,N,N,N,N,N,N,N
+colouring,N,76,1,N,Y,N,N,N,N,N,N,N,N,N
+engraving,N,76,1,Y,Y,N,N,N,N,N,N,N,N,N
+happening,N,75,1,Y,N,N,N,N,N,N,N,N,N,N
+lining,N,75,1,Y,Y,N,N,N,N,N,N,N,N,N
+plumbing,N,75,1,N,Y,N,N,N,N,N,N,N,N,N
+working,N,75,1,Y,N,N,N,N,N,N,N,N,N,N
+shipbuilding,?,74,1,N,Y,N,N,N,N,N,N,N,N,N
+sewing,N,73,1,N,Y,N,N,N,N,N,N,N,N,N
+sting,N,73,1,Y,Y,N,N,N,N,N,N,N,N,N
+boxing,N,71,1,N,Y,N,N,N,N,N,N,N,N,N
+misgiving,N,71,1,Y,Y,N,N,N,N,N,N,N,N,N
+shortcoming,N,71,1,Y,N,N,N,N,N,N,N,N,N,N
+footing,N,69,1,N,Y,Y,N,N,N,N,N,N,N,N
+digging,N,68,1,Y,Y,N,N,N,N,N,N,N,N,N
+housekeeping,?,68,1,N,Y,N,N,N,N,N,N,N,N,N
+ironing,N,68,1,N,Y,N,N,N,N,N,N,N,N,N
+ling,Y,66,1,Y,Y,N,N,N,N,N,N,N,N,N
+hiding,N,65,1,Y,Y,N,N,N,N,N,N,N,N,N
+sling,Y,63,1,Y,N,N,N,N,N,N,N,N,N,N
+knitting,N,62,1,N,Y,N,N,N,N,N,N,N,N,N
+earring,Y,59,1,Y,N,N,N,N,N,N,N,N,N,N
+shaving,N,58,1,Y,N,N,N,N,N,Y,N,N,N,N
+lettering,N,57,1,N,Y,N,N,N,N,N,N,N,N,N
+craving,N,55,1,Y,N,N,N,N,N,N,N,N,N,N
+lovemaking,?,55,1,N,Y,N,N,N,N,N,N,N,N,N
+yearning,N,55,1,Y,Y,N,N,N,N,N,N,N,N,N
+binding,N,54,1,Y,Y,N,N,N,N,N,N,N,N,N
+plaything,Y,54,1,Y,N,N,N,N,N,N,N,N,N,N
+clipping,N,53,1,Y,N,N,N,N,N,N,N,N,N,N
+bedding,N,51,1,N,Y,N,N,N,N,N,N,N,N,N
+daring,N,51,1,N,Y,N,N,N,N,N,N,N,N,N
+knowing,N,51,1,N,N,N,N,N,N,N,N,N,N,Y
+reckoning,N,51,1,Y,Y,N,N,N,N,N,N,N,N,N
+inkling,N,50,1,N,Y,Y,N,N,N,N,N,N,N,N
+learning,N,50,1,N,Y,N,N,N,N,N,N,N,N,N
+trimming,N,50,1,Y,Y,N,N,N,N,N,N,N,N,N
+failing,N,48,1,Y,N,N,N,N,N,N,N,N,N,N
+lodging,N,48,1,N,Y,N,N,N,N,N,N,N,N,N
+ring,Y,48,1,Y,N,Y,N,N,N,N,N,N,N,N
+seedling,Y,48,1,Y,N,N,N,N,N,N,N,N,N,N
+sprinkling,N,48,1,Y,N,N,N,N,N,N,N,N,N,N
+motoring,N,47,1,N,Y,N,N,N,N,N,N,N,N,N
+loathing,N,46,1,N,Y,N,N,N,N,N,N,N,N,N
+sapling,Y,44,1,Y,N,N,N,N,N,N,N,N,N,N
+wrapping,N,44,1,Y,Y,N,N,N,N,N,N,N,N,N
+foreboding,N,43,1,Y,Y,N,N,N,N,N,N,N,N,N
+casing,N,42,1,Y,N,N,N,N,N,N,N,N,N,N
+helping,N,42,1,Y,N,N,N,N,N,N,N,N,N,N
+icing,N,42,1,N,Y,N,N,N,N,N,N,N,N,N
+awakening,N,41,1,Y,N,N,N,N,N,N,N,N,N,N
+netting,N,41,1,N,Y,N,N,N,N,N,N,N,N,N
+whaling,N,41,1,N,Y,N,N,N,N,N,N,N,N,N
+polling,N,40,1,N,Y,N,N,N,N,N,N,N,N,N
+mugging,N,39,1,Y,Y,N,N,N,N,N,N,N,N,N
+fencing,N,38,1,N,Y,N,N,N,N,N,N,N,N,N
+sibling,N,38,1,Y,N,N,N,N,N,N,N,N,N,N
+air-conditioning,Y,37,1,N,Y,N,N,N,N,N,N,N,N,N
+modelling,N,37,1,N,Y,N,N,N,N,N,N,N,N,N
+pounding,N,37,1,Y,Y,N,N,N,N,N,N,N,N,N
+sightseeing,?,37,1,N,Y,N,N,N,N,N,N,N,N,N
+flavouring,N,36,1,Y,Y,N,N,N,N,N,N,N,N,N
+hamstring,Y,36,1,Y,N,N,N,N,N,N,N,N,N,N
+jogging,N,36,1,N,Y,N,N,N,N,N,N,N,N,N
+ordering,N,36,1,Y,N,N,N,N,N,N,N,N,N,N
+seating,N,36,1,N,Y,N,N,N,N,N,N,N,N,N
+siding,N,36,1,Y,Y,N,N,N,N,N,N,N,N,N
+logging,N,35,1,N,Y,N,N,N,N,N,N,N,N,N
+rejoicing,N,35,1,N,Y,N,N,N,N,N,N,N,N,N
+rendering,N,35,1,Y,Y,N,N,N,N,N,N,N,N,N
+childbearing,?,34,1,N,Y,N,N,N,N,N,N,N,N,N
+coating,N,34,1,Y,Y,N,N,N,N,N,N,N,N,N
+glazing,N,34,1,Y,Y,N,N,N,N,N,N,N,N,N
+scattering,N,34,1,N,N,Y,N,N,N,N,N,N,N,N
+bidding,N,33,1,N,Y,N,N,N,N,N,N,N,N,N
+fledgling,N,33,1,Y,N,N,N,N,N,N,N,N,N,N
+stuffing,N,33,1,N,Y,N,N,N,N,N,N,N,N,N
+wording,N,33,1,N,Y,Y,N,N,N,N,N,N,N,N
+facing,N,32,1,Y,Y,N,Y,N,N,N,N,N,N,N
+turning,N,32,1,Y,N,N,N,N,N,N,N,N,N,N
+batting,N,31,1,N,Y,N,N,N,N,N,N,N,N,N
+dripping,N,31,1,N,Y,N,N,N,N,N,N,N,N,N
+horseracing,?,31,1,N,Y,N,N,N,N,N,N,N,N,N
+mountaineering,N,31,1,N,Y,N,N,N,N,N,N,N,N,N
+padding,N,31,1,N,Y,N,N,N,N,N,N,N,N,N
+wiring,N,31,1,N,Y,N,N,N,N,N,N,N,N,N
+grating,N,30,1,Y,N,N,N,N,N,N,N,N,N,N
+moulding,N,30,1,Y,Y,N,N,N,N,N,N,N,N,N
+seasoning,N,30,1,Y,Y,N,N,N,N,N,N,N,N,N
+shaking,N,30,1,Y,N,N,N,N,N,N,N,N,N,N
+Thanksgiving,Y,29,1,Y,N,Y,N,N,N,N,N,N,N,N
+sheeting,N,27,1,N,Y,N,N,N,N,N,N,N,N,N
+starling,N,27,1,Y,N,N,N,N,N,N,N,N,N,N
+Viking,Y,27,1,Y,N,N,N,N,N,N,N,N,N,N
+hoarding,N,26,1,Y,N,N,N,N,N,N,N,N,N,N
+homecoming,?,26,1,Y,N,N,N,N,N,N,N,N,N,N
+leaning,N,26,1,Y,N,N,N,N,N,N,N,N,N,N
+rising,N,26,1,Y,N,N,N,N,N,N,N,N,N,N
+scaffolding,N,26,1,N,Y,N,N,N,N,N,N,N,N,N
+whiting,N,26,1,Y,N,N,N,N,N,N,N,N,N,N
+fling,Y,25,1,Y,N,N,N,N,N,N,N,N,N,N
+grounding,N,25,1,N,N,Y,N,N,N,N,N,N,N,N
+rumbling,N,25,1,Y,Y,Y,N,N,N,N,N,N,N,N
+profit-sharing,?,24,1,N,Y,N,N,N,N,N,N,N,N,N
+rustling,N,24,1,Y,Y,N,N,N,N,N,N,N,N,N
+slimming,N,24,1,N,Y,N,N,N,N,N,N,N,N,N
+airing,N,23,1,Y,Y,N,N,N,N,N,N,N,N,N
+awning,Y,23,1,Y,N,N,N,N,N,N,N,N,N,N
+cheering,N,23,1,N,Y,N,N,N,N,N,N,N,N,N
+outpouring,N,23,1,Y,N,N,N,N,N,N,N,N,N,N
+scolding,N,23,1,Y,Y,N,N,N,N,N,N,N,N,N
+smuggling,N,23,1,N,Y,N,N,N,N,N,N,N,N,N
+christening,N,22,1,Y,Y,N,N,N,N,N,N,N,N,N
+hairdressing,N,22,1,N,Y,N,N,N,N,N,N,N,N,N
+spanking,N,22,1,Y,Y,N,N,N,N,N,N,N,N,N
+yachting,N,22,1,N,Y,N,N,N,N,N,N,N,N,N
+panelling,N,21,1,N,Y,N,N,N,N,N,N,N,N,N
+pleading,N,21,1,Y,Y,N,N,N,N,N,N,N,N,N
+sacking,N,21,1,N,Y,N,N,N,N,N,N,N,N,N
+skateboarding,N,21,1,N,Y,N,N,N,N,N,N,N,N,N
+carpeting,N,20,1,N,Y,N,N,N,N,N,N,N,N,N
+duckling,Y,20,1,Y,Y,N,N,N,N,N,N,N,N,N
+flowering,N,20,1,N,N,Y,N,N,N,N,N,N,N,N
+smallholding,?,20,1,Y,N,N,N,N,N,N,N,N,N,N
+underling,Y,20,1,Y,N,N,N,N,N,N,N,N,N,N
+weakling,Y,20,1,Y,N,N,N,N,N,N,N,N,N,N
+coursing,N,19,1,N,Y,N,N,N,N,N,N,N,N,N
+cupping,N,19,1,N,Y,N,N,N,N,N,N,N,N,N
+infighting,N,19,1,N,Y,N,N,N,N,N,N,N,N,N
+mending,N,19,1,N,Y,N,N,N,N,N,N,N,N,N
+bunting,N,18,1,N,Y,N,N,N,N,N,N,N,N,N
+costing,N,18,1,Y,Y,N,N,N,N,N,N,N,N,N
+gosling,Y,18,1,Y,N,N,N,N,N,N,N,N,N,N
+matting,N,18,1,N,Y,N,N,N,N,N,N,N,N,N
+piping,N,18,1,N,Y,N,N,N,N,N,N,N,N,N
+smattering,Y,18,1,Y,N,N,N,N,N,N,N,N,N,N
+tubing,N,18,1,N,Y,N,N,N,N,N,N,N,N,N
+whipping,N,18,1,Y,Y,N,N,N,N,N,N,N,N,N
+brainwashing,N,17,1,Y,Y,N,N,N,N,N,N,N,N,N
+crackling,N,17,1,N,Y,N,N,N,N,N,N,N,N,N
+hijacking,N,17,1,Y,Y,N,N,N,N,N,N,N,N,N
+paving,N,17,1,N,Y,N,N,N,N,N,N,N,N,N
+screening,N,17,1,Y,Y,N,N,N,N,N,N,N,N,N
+undoing,N,17,1,N,N,Y,N,N,N,N,N,N,N,N
+veiling,N,17,1,N,Y,N,N,N,N,N,N,N,N,N
+dumpling,Y,16,1,Y,N,N,N,N,N,N,N,N,N,N
+offing,N,16,1,N,N,N,N,N,N,N,N,N,N,Y
+paving,N,16,1,Y,N,N,N,N,N,N,N,N,N,N
+ping,Y,16,1,Y,N,Y,N,N,N,N,N,N,N,N
+rubbing,N,16,1,Y,Y,N,N,N,N,N,N,N,N,N
+skating,N,16,1,N,Y,N,N,N,N,N,N,N,N,N
+bookkeeping,?,15,1,N,Y,N,N,N,N,N,N,N,N,N
+chipping,N,15,1,Y,N,N,N,N,N,N,N,N,N,N
+etching,N,15,1,Y,Y,N,N,N,N,N,N,N,N,N
+fastening,N,15,1,Y,N,N,N,N,N,N,N,N,N,N
+flogging,N,15,1,Y,Y,N,N,N,N,N,N,N,N,N
+receiving,N,15,1,N,Y,N,N,N,N,N,N,N,N,N
+roaring,N,15,1,N,N,Y,N,N,N,N,N,N,N,N
+spacing,N,15,1,N,Y,N,N,N,N,N,N,N,N,N
+thieving,N,15,1,N,Y,N,N,N,N,N,N,N,N,N
+touring,N,15,1,N,Y,N,N,N,N,N,N,N,N,N
+wetting,N,15,1,Y,N,N,N,N,N,N,N,N,N,N
+forwarding,N,14,1,N,Y,N,N,N,N,Y,N,N,N,N
+freezing,N,14,1,N,N,Y,N,N,N,N,N,N,N,N
+posting,N,14,1,Y,N,N,N,N,N,N,N,N,N,N
+roofing,N,14,1,N,Y,N,N,N,N,N,N,N,N,N
+staging,N,14,1,Y,Y,N,N,N,N,N,N,N,N,N
+thrashing,N,14,1,Y,N,N,N,N,N,N,N,N,N,N
+wall-painting,?,14,1,Y,Y,N,N,N,N,N,N,N,N,N
+webbing,Y,14,1,N,Y,N,N,N,N,N,N,N,N,N
+bullfighting,N,13,1,N,Y,N,N,N,N,N,N,N,N,N
+designing,N,13,1,N,Y,N,N,N,N,N,N,N,N,N
+drafting,N,13,1,Y,N,N,N,N,N,N,N,N,N,N
+hankering,N,13,1,Y,N,N,N,N,N,N,N,N,N,N
+letting,N,13,1,Y,N,N,N,N,N,N,N,N,N,N
+murmuring,N,13,1,Y,Y,N,N,N,N,N,N,N,N,N
+nothing,N,13,1,Y,N,N,N,N,N,N,N,N,N,N
+conveyancing,N,12,1,N,Y,N,N,N,N,N,N,N,N,N
+farthing,Y,12,1,Y,N,N,N,N,N,N,N,N,N,N
+killing,N,12,1,N,N,N,N,N,N,N,N,N,N,Y
+mainspring,N,12,1,Y,N,N,N,N,N,N,N,N,N,N
+missing,N,12,1,N,N,N,Y,N,N,N,N,N,N,N
+outbuilding,?,12,1,Y,N,N,N,N,N,N,N,N,N,N
+posturing,N,12,1,Y,Y,N,N,N,N,N,N,N,N,N
+rigging,N,12,1,N,Y,N,N,N,N,N,N,N,N,N
+vaulting,N,12,1,N,Y,N,N,N,N,N,N,N,N,N
+believing,N,11,1,N,Y,N,N,N,N,N,N,N,N,N
+changeling,Y,11,1,Y,N,N,N,N,N,N,N,N,N,N
+electioneering,N,11,1,N,Y,N,N,N,N,N,N,N,N,N
+planking,N,11,1,N,Y,N,N,N,N,N,N,N,N,N
+rowing,N,11,1,N,Y,N,N,N,N,N,N,N,N,N
+safekeeping,?,11,1,N,Y,N,N,N,N,N,N,N,N,N
+shoestring,Y,11,1,Y,N,Y,N,N,N,Y,N,N,N,N
+surveying,N,11,1,N,Y,N,N,N,N,N,N,N,N,N
+earthling,Y,10,1,Y,N,N,N,N,N,N,N,Y,N,N
+edging,N,10,1,Y,Y,N,N,N,N,N,N,N,N,N
+nestling,N,10,1,Y,N,N,N,N,N,N,N,N,N,N
+play-acting,?,10,1,N,Y,N,N,N,N,N,N,N,N,N
+rock-climbing,?,10,1,N,Y,N,N,N,N,N,N,N,N,N
+shading,N,10,1,Y,Y,N,N,N,N,N,N,N,N,N
+shelving,N,10,1,N,Y,N,N,N,N,N,N,N,N,N
+sighting,N,10,1,Y,N,N,N,N,N,N,N,N,N,N
+speeding,N,10,1,N,Y,N,N,N,N,N,N,N,N,N
+surfing,N,10,1,N,Y,N,N,N,N,N,N,N,N,N
+towelling,N,10,1,N,Y,N,N,N,N,N,N,N,N,N
+undertaking,N,10,1,Y,Y,N,N,N,N,N,N,N,N,N
+zing,Y,10,1,N,Y,N,N,N,N,N,N,N,N,N
+codling,N,9,1,Y,N,N,N,N,N,N,N,N,N,N
+foundling,N,9,1,Y,N,N,N,N,N,N,N,N,N,N
+gelding,N,9,1,Y,N,N,N,N,N,N,N,N,N,N
+haymaking,?,9,1,N,Y,N,N,N,N,N,N,N,N,N
+kindling,N,9,1,N,Y,N,N,N,N,N,N,N,N,N
+licking,N,9,1,Y,N,N,N,N,N,N,N,N,N,N
+logrolling,?,9,1,N,Y,N,N,N,N,N,N,N,N,N
+proceeding,N,9,1,Y,Y,N,N,N,N,N,N,N,N,N
+Riesling,Y,9,1,Y,Y,N,N,N,N,N,N,N,N,N
+shoplifting,N,9,1,N,Y,N,N,N,N,N,N,N,N,N
+woodworking,?,9,1,N,Y,N,N,N,N,N,N,N,N,N
+drawstring,Y,8,1,Y,N,N,N,N,N,N,N,N,N,N
+ducking,N,8,1,Y,N,N,N,N,N,N,N,N,N,N
+jotting,N,8,1,Y,N,N,N,N,N,N,N,N,N,N
+lashing,N,8,1,Y,N,N,N,N,N,N,N,N,N,N
+plating,N,8,1,N,Y,N,N,N,N,N,N,N,N,N
+politicking,N,8,1,Y,Y,N,N,N,N,N,N,N,N,N
+stocktaking,?,8,1,N,Y,N,N,N,N,N,N,N,N,N
+thanksgiving,N,8,1,Y,Y,N,N,N,N,N,N,N,N,N
+trucking,N,8,1,N,Y,N,N,N,N,N,N,N,N,N
+upswing,N,8,1,Y,N,N,N,N,N,N,N,N,N,N
+wrongdoing,N,8,1,Y,Y,N,N,N,N,N,N,N,N,N
+ball-bearing,N,7,1,Y,N,N,N,N,N,N,N,N,N,N
+barracking,N,7,1,N,Y,N,N,N,N,N,N,N,N,N
+coupling,N,7,1,Y,Y,N,N,N,N,N,N,N,N,N
+dairying,N,7,1,N,Y,N,N,N,N,N,N,N,N,N
+double-dealing,N,7,1,N,Y,N,N,N,N,N,N,N,N,N
+dressmaking,?,7,1,N,Y,N,N,N,N,N,N,N,N,N
+flooring,N,7,1,N,Y,N,N,N,N,N,N,N,N,N
+frosting,N,7,1,N,Y,N,N,N,N,N,N,N,N,N
+hireling,N,7,1,Y,N,N,N,N,N,N,N,Y,N,N
+lading,N,7,1,N,Y,N,N,N,N,N,N,N,N,N
+lemming,N,7,1,Y,N,N,N,N,N,N,N,N,N,N
+tracing,N,7,1,Y,N,N,N,N,N,N,N,N,N,N
+belting,N,6,1,N,Y,N,N,N,N,N,N,N,N,N
+coaxing,N,6,1,Y,Y,N,N,N,N,N,N,N,N,N
+coping,N,6,1,Y,N,N,N,N,N,N,N,N,N,N
+flag-waving,?,6,1,N,Y,N,N,N,N,N,N,N,N,N
+gloaming,Y,6,1,N,N,Y,N,N,N,N,N,N,N,N
+lagging,N,6,1,N,Y,N,N,N,N,N,N,N,N,N
+merrymaking,N,6,1,N,Y,N,N,N,N,N,N,N,N,N
+paling,N,6,1,Y,Y,N,N,N,N,N,N,N,N,N
+ticking,N,6,1,N,Y,N,N,N,N,N,N,N,N,N
+wheeling,N,6,1,N,N,N,N,N,N,N,N,N,N,Y
+fly-fishing,N,5,1,N,Y,N,N,N,N,N,N,N,N,N
+gas-ring,Y,5,1,Y,N,N,N,N,N,N,N,N,N,N
+lady-in-waiting,Y,5,1,Y,N,N,N,N,N,N,N,N,N,N
+muckraking,N,5,1,N,Y,N,N,N,N,N,N,N,N,N
+quisling,N,5,1,Y,N,N,N,N,N,N,N,N,N,N
+roasting,N,5,1,N,N,N,N,N,N,N,N,N,N,Y
+spring-cleaning,?,5,1,N,N,Y,N,N,N,N,N,N,N,N
+starveling,N,5,1,Y,N,N,N,N,N,N,N,N,N,N
+stripling,N,5,1,Y,N,N,N,N,N,N,N,N,N,N
+suiting,N,5,1,N,Y,N,N,N,N,N,N,N,N,N
+wedding-ring,Y,5,1,Y,N,N,N,N,N,N,N,N,N,N
+witch-hunting,?,5,1,N,Y,N,N,N,N,N,N,N,N,N
+zoning,N,5,1,N,Y,N,N,N,N,N,N,N,N,N
+backbiting,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+beading,N,4,1,Y,Y,N,N,N,N,N,N,N,N,N
+blackberrying,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+blacking,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+bragging,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+bullring,Y,4,1,Y,N,N,N,N,N,N,N,N,N,N
+cockfighting,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+dry-cleaning,?,4,1,N,Y,N,N,N,N,N,N,N,N,N
+fellow-feeling,N,4,1,N,Y,Y,N,N,N,N,N,N,N,N
+gilding,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+housewarming,N,4,1,Y,N,N,N,N,N,N,N,N,N,N
+leavening,N,4,1,Y,Y,N,N,N,N,N,N,N,N,N
+leave-taking,N,4,1,Y,N,N,N,N,N,N,N,N,N,N
+namedropping,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+race-meeting,N,4,1,Y,N,N,N,N,N,N,N,N,N,N
+thickening,N,4,1,N,Y,N,N,N,N,N,N,N,N,N
+topping,N,4,1,Y,Y,N,N,N,N,N,N,N,N,N
+yearling,Y,4,1,Y,N,N,N,N,N,N,N,N,N,N
+baby-sitting,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+beagling,Y,3,1,N,Y,N,N,N,N,N,N,N,N,N
+churching,N,3,1,Y,Y,N,N,N,N,N,N,N,N,N
+cowling,Y,3,1,Y,N,N,N,N,N,N,N,N,N,N
+double-glazing,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+drenching,N,3,1,Y,N,N,N,N,N,N,N,N,N,N
+firewatching,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+gunrunning,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+inbreeding,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+key-ring,Y,3,1,Y,N,N,N,N,N,N,N,N,N,N
+lapwing,Y,3,1,Y,N,N,N,N,N,N,N,N,N,N
+misspelling,N,3,1,Y,Y,N,N,N,N,N,N,N,N,N
+pasting,N,3,1,Y,N,N,N,N,N,N,N,N,N,N
+peace-offering,N,3,1,Y,N,N,N,N,N,N,N,N,N,N
+potholing,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+pricking,N,3,1,Y,N,N,N,N,N,N,N,N,N,N
+quartering,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+sealing,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+shadowboxing,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+skin-diving,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+snipping,N,3,1,Y,N,N,N,N,N,N,N,N,N,N
+Thanksgiving,Y,3,1,N,N,N,N,N,N,N,N,N,Y,N
+time-sharing,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+twinkling,N,3,1,N,N,Y,N,N,N,N,N,N,N,N
+underclothing,Y,3,1,N,Y,N,N,N,N,N,N,N,N,N
+water-skiing,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+wellspring,N,3,1,Y,N,N,N,N,N,N,N,N,N,N
+whacking,N,3,1,Y,N,N,N,N,N,N,N,N,N,N
+window-dressing,N,3,1,N,Y,N,N,N,N,N,N,N,N,N
+blood-letting,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+bluestocking,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+bookbinding,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+dowsing,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+drubbing,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+foxhunting,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+good-for-nothing,Y,2,1,Y,N,N,N,N,N,Y,N,Y,N,N
+G-string,Y,2,1,Y,N,N,N,N,N,N,N,N,N,N
+hang-gliding,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+hatching,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+heartburning,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+hurling,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+ice-skating,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+lip-reading,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+mapping,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+minelaying,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+misdoing,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+nursling,Y,2,1,Y,N,N,N,N,N,N,N,N,N,N
+oil-painting,N,2,1,Y,Y,N,N,N,N,N,N,N,N,N
+penny-pinching,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+prayer-meeting,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+press-cutting,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+pressing,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+punishing,N,2,1,N,N,Y,N,N,N,N,N,N,N,N
+rambling,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+redwing,Y,2,1,Y,N,N,N,N,N,N,N,N,N,N
+ribbing,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+self-seeking,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+sequencing,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+shortening,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+smacking,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+smocking,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+soul-searching,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+strip-lighting,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+subheading,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+suckling,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+thank-offering,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+ting,Y,2,1,Y,N,N,N,N,N,N,N,N,N,N
+trend-setting,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+trouncing,N,2,1,Y,N,N,N,N,N,N,N,N,N,N
+wadding,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+weighting,N,2,1,N,Y,Y,N,N,N,N,N,N,N,N
+weight-lifting,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+wire-tapping,N,2,1,N,Y,N,N,N,N,N,N,N,N,N
+ballooning,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+bricklaying,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+caravanning,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+class-feeling,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+cross-hatching,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+curling,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+dairy-farming,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+darning,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+daylight-saving,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+deer-stalking,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+die-casting,N,1,1,Y,Y,N,N,N,N,N,N,N,N,N
+discerning,N,1,1,N,N,N,Y,N,N,N,N,N,N,N
+double-spacing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+dubbing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+Everlasting,N,1,1,N,N,N,N,N,N,N,N,N,Y,N
+face-lifting,N,1,1,Y,N,N,N,N,N,N,N,N,N,N
+faultfinding,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+fire-raising,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+forging,N,1,1,Y,N,N,N,N,N,N,N,N,N,N
+gliding,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+hairspring,Y,1,1,Y,N,N,N,N,N,N,N,N,N,N
+holidaymaking,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+homing,N,1,1,N,Y,N,N,N,N,Y,N,N,N,N
+horse-trading,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+ill-breeding,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+inning,N,1,1,Y,N,N,N,N,N,N,N,N,N,N
+jerry-building,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+leg-pulling,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+matchmaking,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+moneymaking,N,1,1,N,Y,N,N,N,N,Y,N,N,N,N
+mumming,N,1,1,N,N,N,N,N,N,N,N,N,N,Y
+nitpicking,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+nosering,Y,1,1,Y,N,N,N,N,N,N,N,N,N,N
+paring,N,1,1,Y,N,N,N,N,N,N,N,N,N,N
+part-singing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+penny-farthing,Y,1,1,Y,N,N,N,N,N,N,N,N,N,N
+play-reading,N,1,1,Y,Y,N,N,N,N,N,N,N,N,N
+plum-pudding,Y,1,1,Y,Y,N,N,N,N,N,N,N,N,N
+press-clipping,?,1,1,Y,N,N,N,N,N,N,N,N,N,N
+priming,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+racketeering,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+rifling,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+sabre-rattling,N,1,1,N,Y,N,N,N,N,Y,N,N,N,N
+sheathing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+shoemaking,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+show-jumping,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+sizing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+skydiving,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+skywriting,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+sleepwalking,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+sound-recording,N,1,1,Y,N,N,N,N,N,N,N,N,N,N
+square-bashing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+stiffening,N,1,1,Y,Y,N,N,N,N,N,N,N,N,N
+stock-piling,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+stonewalling,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+stopping,N,1,1,Y,Y,N,N,N,N,N,N,N,N,N
+straphanging,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+swing-wing,Y,1,1,Y,N,N,N,N,N,N,N,N,N,N
+tap-dancing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+tatting,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+topdressing,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+trapshooting,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+veining,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+whitening,N,1,1,N,Y,N,N,N,N,N,N,N,N,N
+wigging,N,1,1,Y,N,N,N,N,N,N,N,N,N,N
+wring,Y,1,1,Y,N,N,N,N,N,N,N,N,N,N
+action painting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+ageing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+air-cooling,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+alms-giving,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+arc welding,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+asking,N,0,1,N,N,N,N,N,N,N,N,N,N,Y
+bad feeling,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+belly landing,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+bias binding,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+bill of lading,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+billposting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+bird-nesting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+black pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+blood-poisoning,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+boding,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+bodyline bowling,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+body stocking,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+book learning,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+bowing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+burnt offering,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+camp meeting,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+carbon dating,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+case ending,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+central heating,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+change ringing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+cheeseparing,N,0,1,N,Y,N,N,N,N,Y,N,N,N,N
+chin-wagging,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+Christmas pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+Christmas stocking,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+civil engineering,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+clock-watching,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+clog dancing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+close thing,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+coaming,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+coconut matting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+codling,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+collective bargaining,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+college pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+community singing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+cost of living,N,0,1,N,N,Y,N,N,N,N,N,N,N,N
+crap-shooting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+crash-landing,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+crazy paving,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+crop-dusting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+crop spraying,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+cross-heading,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+crystal-gazing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+data processing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+day of reckoning,N,0,1,Y,N,Y,N,N,N,N,N,N,N,N
+day-spring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+dead reckoning,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+delta wing,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+diamond wedding,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+double-entry book-keeping,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+dry-walling,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+early closing,N,0,1,N,N,Y,N,N,N,N,N,N,N,N
+echo-sounding,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+engagement ring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+factory farming,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+faith-healing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+family planning,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+fibbing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+fingering,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+finger painting,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+firewalking,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+flat racing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+fluting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+food poisoning,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+footslogging,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+forked lightning,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+French dressing,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+gas-fitting,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+genre-painting,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+golden wedding,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+good evening,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+good morning,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+grade crossing,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+hair-splitting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+heavy petting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+Highland fling,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+hiking,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+hot spring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+human being,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+impulse buying,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+ingathering,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+inpouring,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+junketing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+kippered herring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+lamming,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+landscape gardening,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+leading,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+level crossing,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+line drawing,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+line-shooting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+load-shedding,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+making,N,0,1,N,N,Y,N,N,N,N,N,N,N,N
+market-gardening,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+mercy killing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+milk pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+mind reading,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+minesweeping,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+mischief-making,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+mixed farming,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+mourning-ring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+mudslinging,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+napkin-ring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+near thing,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+nesting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+oncoming,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+overmanning,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+pancake landing,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+Panda crossing,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+pease-pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+pedestrian crossing,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+physical training,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+pigsticking,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+pile-dwelling,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+piston ring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+place setting,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+plain dealing,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+plain sailing,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+plane sailing,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+plastering,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+pole-jumping,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+pony-trekking,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+power steering,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+Prince Charming,Y,0,1,N,N,N,N,N,N,N,N,N,Y,N
+prison-breaking,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+prizefighting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+prize-ring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+programmed learning,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+protective colouring,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+pruning,N,0,1,N,N,N,N,N,N,Y,N,N,N,N
+pyramid selling,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+rehearing,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+Revival of Learning,N,0,1,N,N,Y,N,N,N,N,N,N,N,N
+rice pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+roly-poly pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+salad-dressing,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+scandalmongering,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+scantling,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+schoolmastering,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+sea-bathing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+Second Coming,N,0,1,N,N,N,N,N,N,N,N,N,Y,N
+sheet-lightning,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+shellacking,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+shirring,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+shirting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+sight-reading,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+signet-ring,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+silver wedding,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+single-spacing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+skeet shooting,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+skyjacking,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+slating,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+soft landing,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+special pleading,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+split ring,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+stabling,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+standard of living,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+stargazing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+strikebreaking,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+Supreme Being,Y,0,1,N,N,N,N,N,N,N,N,N,Y,N
+sure thing,Y,0,1,N,N,Y,N,N,N,N,N,N,N,N
+surf-riding,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+swashbuckling,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+sweetening,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+table-lifting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+table-rapping,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+table-turning,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+tanning,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+tenpin bowling,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+timeserving,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+tingaling,N,0,1,Y,N,N,N,N,N,N,N,N,N,N
+to-ing and fro-ing,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+ugly duckling,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
+wash-drawing,N,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+weather-boarding,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+whiting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+window shopping,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+winebibbing,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+wire netting,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+wishful thinking,Y,0,1,N,Y,N,N,N,N,N,N,N,N,N
+woolgathering,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+word-splitting,N,0,1,N,Y,N,N,N,N,N,N,N,N,N
+Yorkshire pudding,Y,0,1,Y,Y,N,N,N,N,N,N,N,N,N
+zebra crossing,Y,0,1,Y,N,N,N,N,N,N,N,N,N,N
