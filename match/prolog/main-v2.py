@@ -34,6 +34,7 @@ if __name__ == "__main__":
 
     # process each pickle file
     writer = csv.DictWriter(sys.stdout, FIELDS)
+    writer.writeheader()
 
     for filename in sorted(args.filename):
         with open(filename, "rb") as file:
