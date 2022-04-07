@@ -54,3 +54,16 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
             yield center, "poss-ing"
         elif of:
             yield center, "ing-of"
+
+def det_ing(sentence: Sentence, centers: list[int] | None = None) -> Generator[int, str]:
+    graph = sentence_to_graph(sentence)
+
+    for center in centers if centers else range(1, 1 + len(sentence.tokens)):
+        #has a det out edge from center
+        det =  any(relation == "det"
+                    for _, _, relation
+                    in out_edges(graph, center))
+        if det:
+            yield center, "det-ing"
+
+# proposed hierarchy: poss-ing-of, ing-of, poss-ing, acc-ing, det-ing, vp-ing
