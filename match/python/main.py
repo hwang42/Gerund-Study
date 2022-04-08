@@ -71,6 +71,7 @@ def detect_pattern1(text):
                 pattern_list.append([sen_id, text, str(node + 1), sentence.dependency.text])
     return pattern_list
 
+# TODO: Gerund Type, Relevant Dependencies
 
 def detect_pattern2(text, exclude_set, dilemma_set):
     # csv_output = [['Sentence ID', 'Match Pattern', 'Word', 'Position', 'Sentence']]
