@@ -11,9 +11,9 @@ def sentence_iterator(text: Text) -> Generator[tuple[str, Sentence]]:
             yield f"{text.text_id[2:]}-{p_idx}-{s_idx}", sentence
 
 
-def sentence_to_graph(sentence: Sentence) -> dict[tuple[int, int], str]:
+def sentence_to_graph(dependencies: list[dict]) -> dict[tuple[int, int], str]:
     return {(i["head"], i["id"]): i["deprel"]
-            for i in sentence.dependency.to_dict()[0]}
+            for i in dependencies}
 
 
 def in_edges(graph: dict[tuple[int, int], str], node: int) -> Generator[tuple[int, int, str]]:
@@ -29,7 +29,8 @@ def out_edges(graph: dict[tuple[int, int], str], node: int) -> Generator[tuple[i
 
 
 def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generator[int, str]:
-    graph = sentence_to_graph(sentence)
+    dependencies = sentence.dependency.to_dict()[0]
+    graph = sentence_to_graph(dependencies)
 
     def has_of(center: int) -> bool:
         return any(sentence.tokens[target - 1] == "of" and relation == "case"
@@ -47,10 +48,26 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
         of = any(relation == "nmod" and has_of(target)
                  for _, target, relation
                  in out_edges(graph, center))
-        
-        det =  any(relation == "det"
+
+        # det: Detecting DET-ING tag
+        det = any(relation == "det"
                     for _, _, relation
                     in out_edges(graph, center))
+
+        # acc: Detecting ACC-ING tags
+        acc0 = any(dependencies[source-1]['upos'] in ("PRON", "PROPN") or dependencies[source-1]['xpos'] == "NN"
+                    for source, _, _
+                    in in_edges(graph, center))
+
+
+        acc1 = any(dependencies[source-1]['upos'] == "ADV"
+                   for source, _, _ in in_edges(graph, center)
+                        for src, _, _ in in_edges(graph, source)
+                            if dependencies[src-1]['upos'] in ("PRON", "PROPN") or dependencies[src-1]['xpos'] == "NN")
+
+        acc = acc0 or acc1
+
+        # TODO: Add Relevant Dependencies Column
 
         if poss and of:
             yield center, "poss-ing-of"
@@ -58,13 +75,16 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
             yield center, "poss-ing"
         elif of:
             yield center, "ing-of"
-        elif det and not of:
+        elif det:
             yield center, "det-ing"
+        elif acc:
+            yield center, "acc-ing"
         else:
             yield  center, "vp-ing"
 
 def det_ing(sentence: Sentence, centers: list[int] | None = None) -> Generator[int, str]:
-    graph = sentence_to_graph(sentence)
+    dependencies = sentence.dependency.to_dict()[0]
+    graph = sentence_to_graph(dependencies)
 
     for center in centers if centers else range(1, 1 + len(sentence.tokens)):
         #has a det out edge from center
