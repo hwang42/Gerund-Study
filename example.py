@@ -18,8 +18,8 @@ if __name__ == "__main__":
     filenames = os.listdir(args.directory)
     filenames = map(lambda x: os.path.join(args.directory, x), filenames)
 
-    gerunds = pd.read_csv("match/python/Pattern-2.csv", usecols=["Sentence ID", "Position"])
-    csv_output = [['Sentence ID', 'Position', 'Word', 'Gerund Type', 'Sentence']]
+    gerunds = pd.read_csv("matches.csv", usecols=["id", "position", "exclusion"])
+    csv_output = [['Recommended Exclusion', 'Sentence ID', 'Position', 'Word', 'Gerund Type', 'Sentence']]
 
     # read pickle files and find poss-ing-of patterns
     for filename in filenames:
@@ -31,13 +31,16 @@ if __name__ == "__main__":
             if sentence.skipped:
                 continue
             
-            rslt_df = gerunds.loc[gerunds['Sentence ID'] == id]
-            centers = rslt_df['Position'].tolist()
+            rslt_df = gerunds.loc[gerunds['id'] == id]
+            centers = rslt_df['position'].tolist()
 
             for center, kind in poss_ing_of(sentence, centers):
-                csv_output.append([id, center, sentence.tokens[center-1], kind, ' '.join(sentence.tokens)])
-                print(id, center, sentence.tokens[center-1], kind, ' '.join(sentence.tokens))
+                excluded = rslt_df.loc[(rslt_df['position'] == center), 'exclusion'].item()
+                if pd.isna(excluded):
+                    excluded = " "
+                csv_output.append([excluded, id, center, sentence.tokens[center-1], kind, ' '.join(sentence.tokens)])
+                print(excluded, id, center, sentence.tokens[center-1], kind, ' '.join(sentence.tokens))
     
-    with open("Gerunds-0.csv", "w", newline='') as fp:
+    with open("Gerunds-1.csv", "w", newline='') as fp:
             writer = csv.writer(fp)
             writer.writerows(csv_output)
