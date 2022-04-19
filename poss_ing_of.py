@@ -55,18 +55,28 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
                     in out_edges(graph, center))
 
         # acc: Detecting ACC-ING tags
-        acc0 = any(dependencies[source-1]['upos'] in ("PRON", "PROPN") or dependencies[source-1]['xpos'] == "NN"
-                    for source, _, _
-                    in in_edges(graph, center))
+        # acc0 = any(dependencies[source-1]['upos'] in ("PRON", "PROPN") or dependencies[source-1]['xpos'] == "NN"
+        #             for source, _, _
+        #             in in_edges(graph, center))
 
 
-        acc1 = any(dependencies[source-1]['upos'] == "ADV"
-                   for source, _, _ in in_edges(graph, center)
-                        for src, _, _ in in_edges(graph, source)
-                            if dependencies[src-1]['upos'] in ("PRON", "PROPN") or dependencies[src-1]['xpos'] == "NN")
+        # acc1 = any(dependencies[source-1]['upos'] == "ADV"
+        #            for source, _, _ in in_edges(graph, center)
+        #                 for src, _, _ in in_edges(graph, source)
+        #                     if dependencies[src-1]['upos'] in ("PRON", "PROPN") or dependencies[src-1]['xpos'] == "NN")
 
+        # acc = acc0 or acc1
+
+        #check xpos/upos of previous index in sentence: 
+        # either center-1 is PRON/PROPN/NN
+        acc0 = False
+        if center-2 >= 0:
+            acc0 = dependencies[center-2]['upos'] in ("PRON", "PROPN") or dependencies[center-2]['xpos'] == "NN"
+        # or center-1 is ADV and center-2 is PRON/PROPN/NN
+        acc1 = False
+        if center-2 >= 0 and center-3 >= 0:
+            acc1 = dependencies[center-2]['upos'] == "ADV" and (dependencies[center-3]['upos'] in ("PRON", "PROPN") or dependencies[center-2]['xpos'] == "NN")
         acc = acc0 or acc1
-
         # TODO: Add Relevant Dependencies Column
 
         if poss and of:
