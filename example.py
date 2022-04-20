@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import os, csv
 from poss_ing_of import poss_ing_of, sentence_iterator
+from window import window, longest_dep
 
 from tqdm import tqdm
 
@@ -18,10 +19,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     filenames = os.listdir(args.directory)
-    filenames = map(lambda x: os.path.join(args.directory, x), filenames)
+    filenames = [os.path.join(args.directory, x) for x in filenames]
 
     gerunds = pd.read_csv("updated-updated-updated-matches.csv", usecols=["id", "position", "exclusion"])
-    csv_output = [['Recommended Exclusion', 'Sentence ID', 'Position', 'Word', 'Gerund Type', 'Sentence']]
+    csv_output = [['Recommended Exclusion', 'Sentence ID', 'Position', 'Word', 'Gerund Type', 'Rel_Dep 1 Step', 'Rel_Dep Longest', 'Sentence']]
 
     # read pickle files and find poss-ing-of patterns
     for filename in tqdm(filenames):
@@ -40,7 +41,9 @@ if __name__ == "__main__":
                 excluded = rslt_df.loc[(rslt_df['position'] == center-1), 'exclusion'].item()
                 if pd.isna(excluded):
                     excluded = " "
-                csv_output.append([excluded, id, center, sentence.tokens[center - 1], kind, ' '.join(sentence.tokens)])
+                rel_dep1 = window(sentence, center)
+                rel_dep2 = longest_dep(sentence, center)
+                csv_output.append([excluded, id, center, sentence.tokens[center - 1], kind, rel_dep1, rel_dep2, ' '.join(sentence.tokens)])
                 # print(excluded, id, center, sentence.tokens[center-1], kind, ' '.join(sentence.tokens))
     #TODO: add rule, two other columns to output
     with open("Gerunds-5.csv", "w", newline='') as fp:
