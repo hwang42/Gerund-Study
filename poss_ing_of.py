@@ -1,9 +1,6 @@
 from __future__ import annotations
-
 from typing import Generator
-
 from coca import Sentence, Text
-
 
 def sentence_iterator(text: Text) -> Generator[tuple[str, Sentence]]:
     for p_idx, paragraph in enumerate(text.paragraphs):
@@ -27,11 +24,12 @@ def out_edges(graph: dict[tuple[int, int], str], node: int) -> Generator[tuple[i
         if source == node:
             yield source, target, relation
 
-
+# categorize each center by type of gerund, using boolean variables to mark relevant features as true/false
 def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generator[int, str]:
     dependencies = sentence.dependency.to_dict()[0]
     graph = sentence_to_graph(dependencies)
 
+    #does center have an relation going to "of"?
     def has_of(center: int) -> bool:
         return any(sentence.tokens[target - 1] == "of" and relation == "case"
                    for _, target, relation
@@ -54,20 +52,7 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
                     for _, _, relation
                     in out_edges(graph, center))
 
-        # acc: Detecting ACC-ING tags
-        # acc0 = any(dependencies[source-1]['upos'] in ("PRON", "PROPN") or dependencies[source-1]['xpos'] == "NN"
-        #             for source, _, _
-        #             in in_edges(graph, center))
-
-
-        # acc1 = any(dependencies[source-1]['upos'] == "ADV"
-        #            for source, _, _ in in_edges(graph, center)
-        #                 for src, _, _ in in_edges(graph, source)
-        #                     if dependencies[src-1]['upos'] in ("PRON", "PROPN") or dependencies[src-1]['xpos'] == "NN")
-
-        # acc = acc0 or acc1
-
-        #check xpos/upos of previous index in sentence: 
+        #check xpos/upos of previous index in sentence: dependencies is currently 0-indexed and center is not
         # either center-1 is PRON/PROPN/NN
         acc0 = False
         if center-2 >= 0:
@@ -77,8 +62,8 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
         if center-2 >= 0 and center-3 >= 0:
             acc1 = dependencies[center-2]['upos'] == "ADV" and (dependencies[center-3]['upos'] in ("PRON", "PROPN") or dependencies[center-2]['xpos'] == "NN")
         acc = acc0 or acc1
-        # TODO: Add Relevant Dependencies Column
 
+        # use boolean variables to determine category, starting with most specific and ending with vp-ing as a default case
         if poss and of:
             yield center, "poss-ing-of"
         elif poss:
@@ -91,17 +76,3 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
             yield center, "acc-ing"
         else:
             yield  center, "vp-ing"
-
-def det_ing(sentence: Sentence, centers: list[int] | None = None) -> Generator[int, str]:
-    dependencies = sentence.dependency.to_dict()[0]
-    graph = sentence_to_graph(dependencies)
-
-    for center in centers if centers else range(1, 1 + len(sentence.tokens)):
-        #has a det out edge from center
-        det =  any(relation == "det"
-                    for _, _, relation
-                    in out_edges(graph, center))
-        if det:
-            yield center, "det-ing"
-
-# proposed hierarchy: poss-ing-of, ing-of, poss-ing, acc-ing, det-ing, vp-ing
