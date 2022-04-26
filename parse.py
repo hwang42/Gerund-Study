@@ -4,6 +4,9 @@ import argparse
 import os.path
 import pickle
 
+from tqdm import tqdm
+
+from coca import text_from_tokens
 from gerund.structs import load_coca
 
 if __name__ == "__main__":
@@ -16,7 +19,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # parse COCA corpus and store results
-    for text in load_coca(args.filename):
+    with open(args.filename, "r") as file:
+        for line in tqdm(file):
+            if not line.startswith("##"):
+                continue
+
+        text = text_from_tokens(line.split())
         filename = os.path.join(args.directory, text.text_id[2:] + ".pkl")
 
         with open(filename, "wb") as file:
