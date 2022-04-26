@@ -47,9 +47,9 @@ def gerund_filter(sentence: Sentence) -> Generator[Tuple[str, ID]]:
     assert sentence.dependency is not None, "Sentence's dependency is None"
 
     parse = document_to_graph(sentence.dependency)
-    poses = {i["head"]: i["xpos"] for i in sentence.dependency.to_dict()}
+    poses = {i["id"]: i["xpos"] for i in sentence.dependency.to_dict()[0]}
 
-    for id, text in enumerate(sentence.tokens):
+    for id, text in enumerate(sentence.tokens, start=1):
         if (poses[id] == "VBG" and
                 # no amod dependency going in or out of token
                 "amod" not in [v for k, v in parse.items() if id in k] and
