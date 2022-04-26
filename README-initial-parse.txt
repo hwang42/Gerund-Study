@@ -16,7 +16,7 @@ directory for output pkl files
 
 --- Output ---
 generated pkl files containing the stanza dependency parse of each sentence in the current folder
-    [id (text-paragraph-sentence), sentence tokens, for each token list of dependency information in the format {word id, text, lemma, upos, xpos, features, head of sentence id, deprel, misc, starting character, ending character}]
+    [id (text-paragraph-sentence), matching rule, sentence tokens, for each token list of dependency information in the format {word id, text, lemma, upos, xpos, features, head of sentence id, deprel, misc, starting character, ending character}]
     
     
     example of the dependency information for each token:
