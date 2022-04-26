@@ -1,4 +1,7 @@
-Categorization of Gerund Types
+--- Categorization of Gerund Types ---
+This step takes gerunds (their sentence id and position) and categorizes them into:
+poss-ing-of, poss-ing, ing-of, det-ing, acc-ing, and vp-ing
+It outputs these into a csv that also provides all of the tags for each gerund and the relevant dependencies (immediate edges into/out of the gerund)
 
 --- Run Instructions --- 
 in command line (with environment activated), run command "python example.py [directory of parsed pickle files]"
@@ -15,4 +18,4 @@ directory of parsed pickle files, as a command line argument
 
 --- Output ---
 csv file containing dataframe of format
-    ['Recommended Exclusion', 'Sentence ID', 'Position', 'Word', 'Gerund Type', 'Rel_Dep 1 Step', 'Rel_Dep Longest', 'Sentence']
+    ['Recommended Exclusion', 'Sentence ID', 'Position', 'Word', 'Gerund Type', 'Tags', 'Dependencies', 'Relevant Dependencies', 'Sentence']
