@@ -18,10 +18,10 @@ if __name__ == "__main__":
     # create list of complete paths of all files in the directory
     filenames = [os.path.join(args.directory, x) for x in filenames]
     # read sentence_id, word position, and exclusion result from pattern-matching output csv
-    gerunds = pd.read_csv("updated-updated-updated-matches.csv", usecols=["id", "position", "exclusion"])
+    gerunds = pd.read_csv("extracted.csv", usecols=["id", "position", "exclusion"])
     # create structure of final csv output with annotated gerund type added, tags and relevant dependencies
-    csv_output = [['Recommended Exclusion', 'Sentence ID', 'Position', 'Word', 'Gerund Type', 'Tags', 'Dependencies',
-                   'Relevant Dependencies', 'Sentence']]
+    csv_output = [['recommended_exclusion', 'sentence_id', 'position', 'word', 'gerund_type', 'tags', 'dependencies',
+                   'relevant_dependencies', 'sentence']]
 
     # iterate and load each pickle file
     for filename in tqdm(filenames):
@@ -38,20 +38,20 @@ if __name__ == "__main__":
             # extract all centers (indices of gerunds) from that sentence
             centers = rslt_df['position'].tolist()
 
-            # for each center and its categorization (all centers+=1 because we switch from 0- to 1-indexed)
-            for center, kind in poss_ing_of(sentence, [i + 1 for i in centers]):
+            # for each center (1-indexed) and its categorization
+            for center, kind in poss_ing_of(sentence, centers):
                 # store excluded results
-                excluded = rslt_df.loc[(rslt_df['position'] == center - 1), 'exclusion'].item()
+                excluded = rslt_df.loc[(rslt_df['position'] == center), 'exclusion'].item()
                 # change from Na to a space
                 if pd.isna(excluded):
                     excluded = " "
                 tags, all_dep, rel_dep = window(sentence, center)
                 # add this gerund data to the output csv
-                csv_output.append([excluded, id, center, sentence.tokens[center - 1], kind, tags, all_dep, rel_dep,
+                csv_output.append([excluded, id, center, sentence.tokens[center-1], kind, tags, all_dep, rel_dep,
                                    ' '.join(sentence.tokens)])
 
     # TODO: add rule, two other columns to output
     # write the full output to a csv file
-    with open("Gerunds-6.csv", "w", newline='') as fp:
+    with open("Gerunds-test.csv", "w", newline='') as fp:
         writer = csv.writer(fp)
         writer.writerows(csv_output)

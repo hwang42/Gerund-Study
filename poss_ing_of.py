@@ -52,7 +52,7 @@ def poss_ing_of(sentence: Sentence, centers: list[int] | None = None) -> Generat
                     for _, _, relation
                     in out_edges(graph, center))
 
-        #check xpos/upos of previous index in sentence: dependencies is currently 0-indexed and center is not
+        #check xpos/upos of previous index in sentence: dependencies is 0-indexed and center is 1-indexed
         # either center-1 is PRON/PROPN/NN
         acc0 = False
         if center-2 >= 0:
