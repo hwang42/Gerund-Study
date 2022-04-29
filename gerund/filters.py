@@ -51,13 +51,15 @@ def gerund_filter(sentence: Sentence) -> Generator[Tuple[str, ID]]:
 
     for id, text in enumerate(sentence.tokens, start=1):
         if (poses[id] == "VBG" and
-                # no amod dependency going in or out of token
+                # no amod dependency going into or out of the token
                 "amod" not in [v for k, v in parse.items() if id in k] and
-                # no aux dependency going out of token
-                "aux" not in [v for k, v in parse.items() if id == k[0]]):
+                # no aux dependency going into or out of the token
+                "aux" not in [v for k, v in parse.items() if id in k]):
             yield "VBG", id
 
-        if poses[id] == "NN" and text.endswith("ing"):
+        if (poses[id] == "NN" and text.endswith("ing") and
+                # no compound dependency going into the token
+                "compound" not in [v for k, v in parse.items() if id == k[1]]):
             yield "NN", id
 
         if poses[id] == "NNS" and text.endswith("ings"):

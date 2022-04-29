@@ -24,6 +24,7 @@ if __name__ == "__main__":
 
     # load exclusion recommendation file, ignore all multi-token entries
     exclusion = pd.read_csv(args.exclusion)
+    exclusion["Word"] = exclusion["Word"].str.strip()
     exclusion = exclusion[-exclusion["Word"].str.contains(" ")]
     exclusion = {i["Word"]: i["Exclude?"] for _, i in exclusion.iterrows()}
 
@@ -40,8 +41,12 @@ if __name__ == "__main__":
 
             for rule, center in gerund_filter(sentence):
                 word = sentence.tokens[center - 1]
-                excl = exclusion.get(
-                    word.lower(), "?") if rule != "VBG" else None
+                if rule == "VBG":
+                    excl = "N"
+                elif rule == "NN":
+                    excl = exclusion.get(word.lower(), "?")
+                elif rule == "NNS":
+                    excl = exclusion.get(word.lower()[:-1], "?")
                 sent = " ".join(sentence.tokens)
 
                 extracted.append([id, rule, word, center, excl, sent])
