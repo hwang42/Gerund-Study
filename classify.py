@@ -1,11 +1,13 @@
 import argparse
+import csv
+import os
 import pickle
-import pandas as pd
-import os, csv
-from gerund.structs import sentence_iterator, classify_gerunds
-from window import window
 
+import pandas as pd
 from tqdm import tqdm
+
+from gerund.structs import classify_gerunds, sentence_iterator
+from window import window
 
 if __name__ == "__main__":
 

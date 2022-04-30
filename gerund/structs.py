@@ -89,6 +89,7 @@ def sentence_iterator(text: Text) -> Generator[Tuple[str, Sentence]]:
         for s_idx, sentence in enumerate(paragraph.sentences):
             yield f"{text.text_id[2:]}-{p_idx}-{s_idx}", sentence
 
+
 def sentence_to_graph(dependencies: list[dict]) -> dict[tuple[int, int], str]:
     return {(i["head"], i["id"]): i["deprel"]
             for i in dependencies}
@@ -105,12 +106,13 @@ def out_edges(graph: dict[tuple[int, int], str], node: int) -> Generator[Tuple[i
         if source == node:
             yield source, target, relation
 
+
 # categorize each center by type of gerund, using boolean variables to mark relevant features as true/false
 def classify_gerunds(sentence: Sentence, centers: list[int] | None = None) -> Generator[int, str]:
     dependencies = sentence.dependency.to_dict()[0]
     graph = sentence_to_graph(dependencies)
 
-    #does center have an relation going to "of"?
+    # does center have an relation going to "of"?
     def has_of(center: int) -> bool:
         return any(sentence.tokens[target - 1] == "of" and relation == "case"
                    for _, target, relation
@@ -130,18 +132,20 @@ def classify_gerunds(sentence: Sentence, centers: list[int] | None = None) -> Ge
 
         # det: Detecting DET-ING tag
         det = any(relation == "det"
-                    for _, _, relation
-                    in out_edges(graph, center))
+                  for _, _, relation
+                  in out_edges(graph, center))
 
-        #check xpos/upos of previous index in sentence: dependencies is 0-indexed and center is 1-indexed
+        # check xpos/upos of previous index in sentence: dependencies is 0-indexed and center is 1-indexed
         # either center-1 is PRON/PROPN/NN
         acc0 = False
         if center-2 >= 0:
-            acc0 = dependencies[center-2]['upos'] in ("PRON", "PROPN") or dependencies[center-2]['xpos'] == "NN"
+            acc0 = dependencies[center-2]['upos'] in (
+                "PRON", "PROPN") or dependencies[center-2]['xpos'] == "NN"
         # or center-1 is ADV and center-2 is PRON/PROPN/NN
         acc1 = False
         if center-2 >= 0 and center-3 >= 0:
-            acc1 = dependencies[center-2]['upos'] == "ADV" and (dependencies[center-3]['upos'] in ("PRON", "PROPN") or dependencies[center-2]['xpos'] == "NN")
+            acc1 = dependencies[center-2]['upos'] == "ADV" and (dependencies[center-3]['upos'] in (
+                "PRON", "PROPN") or dependencies[center-2]['xpos'] == "NN")
         acc = acc0 or acc1
 
         # use boolean variables to determine category, starting with most specific and ending with vp-ing as a default case
@@ -156,4 +160,4 @@ def classify_gerunds(sentence: Sentence, centers: list[int] | None = None) -> Ge
         elif acc:
             yield center, "acc-ing"
         else:
-            yield  center, "vp-ing"
+            yield center, "vp-ing"
