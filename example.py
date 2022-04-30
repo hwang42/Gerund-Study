@@ -12,6 +12,7 @@ if __name__ == "__main__":
     # takes one command line argument: directory of pickle files that contain the dependency parses
     parser = argparse.ArgumentParser()
     parser.add_argument("directory", help="Directory of the pickle files.")
+    parser.add_argument("output", help="csv output file")
     args = parser.parse_args()
 
     filenames = os.listdir(args.directory)
@@ -42,6 +43,9 @@ if __name__ == "__main__":
             for center, kind in poss_ing_of(sentence, centers):
                 # store excluded results
                 excluded = rslt_df.loc[(rslt_df['position'] == center), 'exclusion'].item()
+                #skip over any gerunds that should be excluded
+                if excluded == "Y" or excluded == "R":
+                    continue
                 # change from Na to a space
                 if pd.isna(excluded):
                     excluded = " "
@@ -52,6 +56,6 @@ if __name__ == "__main__":
 
     # TODO: add rule, two other columns to output
     # write the full output to a csv file
-    with open("Gerunds-test.csv", "w", newline='') as fp:
+    with open(args.output, "w", newline='') as fp:
         writer = csv.writer(fp)
         writer.writerows(csv_output)
