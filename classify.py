@@ -46,8 +46,8 @@ if __name__ == "__main__":
             for center, kind in classify_gerunds(sentence, centers):
                 # store excluded results
                 excluded = rslt_df.loc[(rslt_df['position'] == center), 'exclusion'].item()
-                #skip over any gerunds that should be excluded
-                if excluded == "Y" or excluded == "R":
+                #skip over any gerunds that should be excludes (can add/remove ?,R as needed)
+                if excluded in ("Y"):
                     continue
                 # change from Na to a space
                 if pd.isna(excluded):
