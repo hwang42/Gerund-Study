@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from coca import Sentence
-from poss_ing_of import in_edges, out_edges, sentence_to_graph
+from gerund.structs import Sentence, in_edges, out_edges, sentence_to_graph
 
 
 def window(sentence: Sentence, center: int) -> tuple[str, str, str]:
