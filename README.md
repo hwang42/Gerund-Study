@@ -2,12 +2,6 @@
 
 University of Rochester, LIN 250 Course Research Project
 
-> Note: For those who cannot setup the anaconda environment using the `environment.yml` file (which seems to be a lot of people), please use the following command:
->
-> ```bash
-> conda create -n LIN250 -c defaults -c stanfordnlp -c conda-forge python=3.8 autopep8 stanza nltk pandas
-> ```
-
 ## Setup
 
 To acquire the necessary Python packages to reproduce our results, you can use either `conda` or `pip`.
@@ -86,3 +80,15 @@ $ python extract.py --output [output] exclusion.csv [filename]
 After running `extract.py`, you should obtain a CSV file containing the gerund candidates. This file will be used by the classify stage. `extracted.csv` is the CSV file obtained during our experiment.
 
 > Note: You may supply multiple `filename`s (e.g., UNIX wildcard `*.pkl` works).
+
+### Classify Stage
+
+This stage takes the extracted gerunds from `extracted.csv` (or the output file from the extract stage) and categorizes them into: poss-ing-of, poss-ing, ing-of, det-ing, acc-ing, and vp-ing. This is output into a CSV file containing the final dataframe. It can be run with the following command.
+
+```bash
+python classify.py [directory of parsed pickle files] [extracted csv file] [dataframe csv file]
+```
+
+>Note: The directory provided in the first argument must only contain pickle files
+
+For further detail about any stages, reference the README-parse.txt, README-extract.txt, README-classify.txt.
