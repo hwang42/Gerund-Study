@@ -6,8 +6,7 @@ import pickle
 
 from tqdm import tqdm
 
-from coca import text_from_tokens
-from gerund.structs import load_coca
+from gerund.structs import text_from_tokens
 
 if __name__ == "__main__":
     # setup command line argument parser
@@ -24,8 +23,8 @@ if __name__ == "__main__":
             if not line.startswith("##"):
                 continue
 
-        text = text_from_tokens(line.split())
-        filename = os.path.join(args.directory, text.text_id[2:] + ".pkl")
+            text = text_from_tokens(line.split())
+            filename = os.path.join(args.directory, text.text_id[2:] + ".pkl")
 
-        with open(filename, "wb") as file:
-            pickle.dump(text, file)
+            with open(filename, "wb") as file:
+                pickle.dump(text, file)
