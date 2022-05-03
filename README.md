@@ -71,16 +71,16 @@ After running `parse.py`, you should obtain a collection of Python pickle files 
 
 ### Extract Stage
 
-During this stage, parses of COCA texts are examined and potentially gerunds are extracted using our proposed patterns (see paper). The gerund candidates are also labeled with a "recommendation" for whether it should be excluded (e.g., words such as "king"). The specific recommendations for words that we have devised can be found in `exclude.csv`. To extract the potential gerunds from the parse contained in `filename`, use the following command.
+During this stage, parses of COCA texts are examined and potentially gerunds are extracted using our proposed patterns (see paper). The gerund candidates are also labeled with a "recommendation" for whether it should be excluded (e.g., words such as "king"). The specific recommendations for words that we have devised can be found in `exclusion.csv`. To extract the potential gerunds from the parse contained in `filename`, use the following command.
 
 ```bash
-$ python extract.py exclude.csv [filename]
+$ python extract.py exclusion.csv [filename]
 ```
 
 You may optionally supply the parameter `--output` to tell `extract.py` to store the resulting CSV file in a particular `output`.
 
 ```bash
-$ python extract.py --output [output] exclude.csv [filename]
+$ python extract.py --output [output] exclusion.csv [filename]
 ```
 
 After running `extract.py`, you should obtain a CSV file containing the gerund candidates. This file will be used by the classify stage. `extracted.csv` is the CSV file obtained during our experiment.
