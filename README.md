@@ -83,6 +83,6 @@ You may optionally supply the parameter `--output` to tell `extract.py` to store
 $ python extract.py --output [output] exclude.csv [filename]
 ```
 
-After running `extract.py`, you should obtain a CSV file containing the gerund candidates. This file will be used by the classify stage.
+After running `extract.py`, you should obtain a CSV file containing the gerund candidates. This file will be used by the classify stage. `extracted.csv` is the CSV file obtained during our experiment.
 
-> NOte: You may supply multiple `filename`s (e.g., UNIX wildcard `*.pkl` works).
+> Note: You may supply multiple `filename`s (e.g., UNIX wildcard `*.pkl` works).
