@@ -43,7 +43,7 @@ $ python -m nltk.downloader punkt
 
 ## Usage
 
-We divided the dataframe generation process into three stages: parse, extract, and classify. To carry out each of the stages, follow the following instructions, assuming the desired virtual environment is activated.
+We divided the dataframe generation process into three stages: parse, extract, and classify. To carry out each of the stages, follow the next instructions in order, assuming the desired virtual environment is activated.
 
 ### Parse Stage
 
