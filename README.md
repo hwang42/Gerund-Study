@@ -8,7 +8,7 @@ To acquire the necessary Python packages to reproduce our results, you can use e
 
 ### Install Using `conda`
 
-After activating the desired virtual environment ([Anaconda's official documentation on virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)), the necessary packages can be installed using the following command.
+After activating the desired virtual environment (use [Anaconda's official documentation on virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) to create a virtual environment in the Prompt terminal), the necessary packages can be installed using the following command.
 
 ```bash
 $ conda install -c defaults -c stanfordnlp -c conda-forge python=3.8 pandas stanza nltk
